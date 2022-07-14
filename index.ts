@@ -13,7 +13,7 @@ app.get('/', (req:Request, res:Response) => {
 })
 
 app.get('/hello',(req:Request, res:Response) => {
-    res.send("welcome to get route : !hello")
+    res.json(data:{message:"goodbye world"})
 })
 
 app.listen(port, ()=> {
